@@ -1,8 +1,9 @@
 import 'dotenv/config';
-import * as express from 'express';
+import express from 'express';
+import { Application } from 'express';
 import { getMe, postMe } from './telegramController';
 
-const app = express();
+const app: Application = express();
 
 const hostname = process.env.HOST;
 const port = process.env.PORT;
