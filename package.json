@@ -1,0 +1,19 @@
+{
+  "name": "deploybot",
+  "version": "0.1.0",
+  "description": "telegram bot for deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tafler/deployBot.git"
+  },
+  "author": "Aleksandr Bukhalo <aleksandr@bukhalo.com> (https://github.com/bukhalo)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tafler/deployBot/issues"
+  },
+  "homepage": "https://github.com/tafler/deployBot#readme"
+}
