@@ -1,4 +1,11 @@
 module.exports = {
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     "ecmaVersion": 2019,
