@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/tafler/deployBot.git"
   },
-  "author": "Aleksandr Bukhalo <aleksandr@bukhalo.com> (https://github.com/bukhalo)",
+  "author": "Artemiy Tafintsev <taffik@yandex.ru> (https://github.com/tafler)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tafler/deployBot/issues"
