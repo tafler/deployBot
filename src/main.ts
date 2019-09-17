@@ -1,17 +1,15 @@
-/* eslint-ignore */
-import express from 'express';
-import * as telegramController from './telegramController';
-
-require('dotenv').config();
+import 'dotenv/config';
+import * as express from 'express';
+import { getMe, postMe } from './telegramController';
 
 const app = express();
 
 const hostname = process.env.HOST;
 const port = process.env.PORT;
 
-app.get('/', telegramController.getMe);
+app.get('/', getMe);
 
-app.post('/', telegramController.postMe);
+app.post('/', postMe);
 
 app.listen(port, () => {
   console.warn(`Server started on ${hostname}:${port}`);
