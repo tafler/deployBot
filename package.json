@@ -1,0 +1,41 @@
+{
+  "name": "deploybot",
+  "version": "0.1.0",
+  "description": "telegram bot for deploy",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
+    "start:debug": "tsc-watch -p tsconfig.build.json --onSuccess \"node --inspect-brk dist/main.js\"",
+    "start:prod": "node dist/main.js",
+    "lint": "eslint --fix --ext .ts, --ignore-path .gitignore .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tafler/deployBot.git"
+  },
+  "author": "Artemiy Tafintsev <taffik@yandex.ru> (https://github.com/tafler)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/tafler/deployBot/issues"
+  },
+  "homepage": "https://github.com/tafler/deployBot#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/parser": "^2.3.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.4.1",
+    "tsc-watch": "^3.0.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.6.3"
+  }
+}
